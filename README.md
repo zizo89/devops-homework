@@ -40,9 +40,9 @@ RMQ = RabbitMQ
 rmq shovel = RMQ plugin which pushes data from one RMQ instance to another
 IoT = Internet of Things
 
-Our data "path" looks something like this:
+Assume a data "path" which looks something like this:
 
-    `[IoT RMQ]-----(rmq shovel)---->[AWS RMQ]<-------[Logstash]----->[Elasticsearch]`
+    [IoT RMQ]-----(rmq shovel)---->[AWS RMQ]<-------[Logstash]----->[Elasticsearch]
 
 Assumptions:
 
@@ -50,15 +50,15 @@ Assumptions:
   JSON data to [AWS RMQ] using RMQ plugin called Shovel
 - That (JSON) data consists of monitoring data as well as core metrics
   like battery charge, etc
-- We are tied to RMQ and Elasticsearch
-- Our Commercialisation team are competent data scientists, however, they don't
+- You have to use RMQ and Elasticsearch
+- Our Data Science team are competent data scientists, however, they don't
   like working with Elasticsearch
 - Our data scientists use Python
 - There is so much data that, after some time, we have to archive Elasticsearch data,
-  which makes it unavailable to the Commercialisation team
+  which makes it unavailable to the Data Science team
 
 Your task is to come up with a design which would leave RMQ and Elasticsearch in place
-but would also funnel data into some data store which the Commercialisation team
+but would also funnel data into some data store which the Data Science team
 will use to do their data science stuff.
 
 Submit a few paragraphs explaining your design and (optionally) a basic architecture diagram.
