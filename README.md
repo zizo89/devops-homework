@@ -36,14 +36,9 @@ The exposed port should be configurable.
 
 ## Task 3
 
-RMQ
-: RabbitMQ
-
-rmq shovel
-: RMQ plugin which pushes data from one RMQ instance to another
-
-IoT
-: Internet of Things
+- RMQ: RabbitMQ
+- rmq shovel: RMQ plugin which pushes data from one RMQ instance to another
+- IoT: Internet of Things
 
 Assume a data "path" which looks something like this:
 
