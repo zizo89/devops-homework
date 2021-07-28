@@ -13,7 +13,7 @@ be done in day-to-day work. We appreciate you taking the time!
     * JakubBajorekCT
     * mateuszterczynski
     * ryant71
-
+4. There is no need to create a PR. Just let our HR team know what your repository is so that they can pass it on to the DevOps team
 
 So, here are the tasks:
 
