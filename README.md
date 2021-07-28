@@ -22,12 +22,12 @@ So, here are the tasks:
 
 Please write a BASH script which does the following:
 
-Starting in the /opt directory, locate all directories which contain
+* Starting in the /opt directory, locate all directories which contain
 a file called .prune-enable
 
-In those directories, delete any files named crash.dump
+* In those directories, delete any files named crash.dump
 
-In those directories, for any file having the suffix ".log", if the
+* In those directories, for any file having the suffix ".log", if the
 file is larger than one megabyte, replace the file with a file containing
 only the last 20,000 lines.
 
